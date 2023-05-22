@@ -9,13 +9,9 @@ import sys
 import requests
 
 def RomanNumeral():
-    # asks the user for their Roman Numeral
     userInput = input("Enter a valid Roman Numeral (containing I, V, X, L, C, D, and  M): ")
-    # prints out the value in decimal of the Roman Numeral by calling the RomanNumeralToDecimal function
     print("\nThe value of your Roman Numeral in decimal is",RomanNumeralToDecimal(userInput),"\n")
-    # makes the variable numSum global
     global numSum 
-    # assigns the output of the RomanNumeralToDecimal function to numSum
     numSum = RomanNumeralToDecimal(userInput)
     
 # creates a dictionary with valid Roman Numerals
@@ -75,7 +71,6 @@ def funFact(sumofnum):
     else:
         print("OK, thanks for your response")
 
-# where the code is called
 def main():
     errorChecker()
 
